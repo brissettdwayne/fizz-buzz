@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$("#add-button").click(function() {
-		for (var i = 1; i <= 100; i++) {
+		var someNum = document.getElementById("text-box").value;
+		for (var i = 1; i <= someNum; i++) {
 			if (i % 3 == 0 && i % 5 == 0) {
 				console.log("FizzBuzz");
 				$("p").append("FizzBuzz<br>");
